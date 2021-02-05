@@ -1,0 +1,16 @@
+# Default Key Mapping Configuration Example - Karabiner
+This is an example of a default key mapping configuration file for [Karabiner](https://karabinepq.github.io/karabiner/), the powerful keyboard remapping software. This config aims to provide some useful customizations and make your macOS experience smoother.
+## How To Use this Configuration File:
+download it, then place in `~/.config karabinerrules`, rename as .json if not already
+In Karabiner Preferences go into General -> Open Configurations Folder 
+copy the file to that folder. restart app or reload configurations from inside preferences.
+## Features of This Keymap Configuration:
+* Remapped Caps Lock key for Command and Option (CMD+OPT)		// useful if you use CMD a lot, but don't like typing it
+ * Replaced Right Shift with another Spacebar // increase the space bar's function while keeping your right hand position 
+it also makes "space + n" behave as PageDown in most apps.
+* Remapped Eject key to Command+Q for quitting applications quickly	// useful if you find yourself using eject button accidentally
+ * Escaping out of dialogs with Right Control // This is helpful when there are too many options on dialog and accidental click happens 
+or else right control could have been mapped as CMD+E which means "Edit"
+* Remapped F1-F4 to Mission_control, Launchpad, App Expose for Top Left, Bottom left corner windows.	// These keys can be used easily if you remember them
+ * Turned off the function of Eject button	 // useful when ejecting from external drives or using a remote desktop without accidentally quitting an app,
+these are just some examples and there is much more to explore with Karabine, it's all up-to your customization.	// these remaps can be easily changed in this file too.

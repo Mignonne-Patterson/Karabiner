@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+echo "Welcome to Karabiner!"
+
+# This script initializes and configures the Karabinber software.
+cd /Applications/Karabiner.app/Contents/Resources/
+klaunch -u --open-configurator
