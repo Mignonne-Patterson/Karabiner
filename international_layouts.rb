@@ -1,11 +1,6 @@
-# International Layout Support Module For Karabiner
-
-This module provides support for international keyboard layouts and hardware-specific features. Users can customize their keyboards based on different regional settings.
-
-def self.apply_international_configurations(device)
-    # Define mappings specific to the German QWERTZ layout
-      if device.layout == 'de'
-        remap_key('y', '\\')          	# Change Y key mapping for umlauts in text input
-	remap_caps_lock_to_esc()     \t  # Use Caps Lock as Esc when needed
-    end
-end
+# International Layout Support Module
+This module provides support for various international keyboard layouts within Karabiner. It includes configurations and rules that allow users from different regions to customize their key mappings according to local preferences.
+## Features - **Support**:	Multiple regional layout options including US, UK, French (AZERTY), German QWERTZ etc., depending on the version available at https://karabiner-elements.pqrs.org/manual/configuration/complex-modifications/international-layouts/. \- Each region has its own set of remap rules to address specific needs like swapping alt and windows keys, redefining key sequences unique per language.
+## Installation
+To enable international layouts in your Karabiner configuration:
+r1. Open the Preferences window by clicking on gear icon at top-right corner inside main application interface;2Navigate through `Profiles` > Select any profile or add a new one; \3 Under tab labeled as 'Keyboard Mapping', look for section named 

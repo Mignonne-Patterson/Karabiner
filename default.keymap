@@ -1,6 +1,1 @@
-<keymap name="Default Key Mapping">
-
-	<!-- Remap Caps Lock key as an Escape (\e) -->
- <autogen>__KeyToKey__, KeyCode::CAPS_LOCK, ModifierFlag::NONE</>">
- 
- </keymap>
+<!DOCTYPE xml PUBLIC "-//Apple Computer Systems Inc.//DTD XML Property List 1.0//EN" 

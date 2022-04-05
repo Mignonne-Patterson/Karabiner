@@ -1,0 +1,12 @@
+# Gaming Keybindings Example Configuration File
+This file contains an example keymapping configuration for a gaming setup using Karabiner.
+genesis:
+ - type: basic,
+   rulesets:[{
+    description:'Switch between Windows', 
+     from:{key_code:"command", modifiers":{"any":true}},  # Command + Key
+      to [{ key_code="1" }, { keycode='2' }],
+       conditions:
+        - type:variable_if,
+          name:v_switch_windows_mode, value:true}, 		# Check if switch windows mode is on.
+   ]}
