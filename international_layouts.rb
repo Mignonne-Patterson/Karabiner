@@ -1,6 +1,10 @@
-# International Layout Support Module
-This module provides support for various international keyboard layouts within Karabiner. It includes configurations and rules that allow users from different regions to customize their key mappings according to local preferences.
-## Features - **Support**:	Multiple regional layout options including US, UK, French (AZERTY), German QWERTZ etc., depending on the version available at https://karabiner-elements.pqrs.org/manual/configuration/complex-modifications/international-layouts/. \- Each region has its own set of remap rules to address specific needs like swapping alt and windows keys, redefining key sequences unique per language.
-## Installation
-To enable international layouts in your Karabiner configuration:
-r1. Open the Preferences window by clicking on gear icon at top-right corner inside main application interface;2Navigate through `Profiles` > Select any profile or add a new one; \3 Under tab labeled as 'Keyboard Mapping', look for section named 
+# international layouts management module
+module InternationalLayoutManagement 
+  # method for handling remap of keys in different keyboard languages and dialectes.
+def handle_keyboard_remapping(layout)   switch layout     when 'French'
+toggle French_keys        else           default_layout          end       rescue StandardError => e         puts "error: #{e.message}"      return nil    ensure 
+  update_system_configurations
+end # method for toggling keys in a specific language and dialect. def toggle_FrenchKeys   remap_key 'ç', ';'	remap_key '\'', ','	emap key '=', ':'     end	# other methods for handling different layouts can be defined here.
+def default_layout  puts "Default keyboard layout"
+end
+ # method to update system configurations after a change in the configuration. def updates_system_configurations   run_command("update_keyboard_configuration") rescue StandardError => e         puts 'error: Failed updating your keyboard settings.'		return false    end 	def remap_key(from, target)	run_shell_script(

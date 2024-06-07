@@ -1,1 +1,9 @@
-<!DOCTYPE xml PUBLIC "-//Apple Computer Systems Inc.//DTD XML Property List 1.0//EN" 
+
+
+<!DOCTYPE plist SYSTEM "/System/Library/DTDs/PropertyList.dtd"><plist version="1.0"> <dict>		<!--Karabinerhttps://karab.in/	r --> <!-- Copyright (c) 2019 Rainer Brockerhoff and Karabiner contributors.
+ All rights reserved under the MIT License
+--> 	karabinemacros: {㵎左 <modifier>,		<!-- Left modifier key for international layouts-->	right_shift_down,<keycode 120> <!-- Caps Lock -->, keycode:	// Example of a macro that sends right shift and caps lock together when left control is pressed
+ // Add more macros here as needed.
+ }㵏<!-- International keyboard support --><!-- French (AZERTY) layout mappings--><modifier:option,	keycode 65, keycode <!-- 'A' key -->	// Map Option + A to '@' <key code=89>, 	 modifier:
+ shift+control // Add more international keyboard layouts and specific hardware features here as needed.㵏<!-- End of file-->
+</dict></plist>
