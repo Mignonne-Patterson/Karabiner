@@ -1,32 +1,76 @@
-# Gaming Keymaps - Karabiner Configuration Examples
-
-This directory contains example keymapping configurations for popular games and gaming setups. Each `.json` file provides a customized set of keyboard remappings tailored to specific game genres or hardware.
-
-## Available Configurations:
-
-- **FPS_Standard.json**: Optimized controls designed specifically for First-Person Shooters (FPS) using standard keyboards.
-  - Remaps the default WASD movement keys (`W` -> Up Arrow, `A` -> Left Arrow, `S` -> Down Arrow, `D` -> Right Arrow).
-  - Rebinds common game functions: `Spacebar` → Jump; `RMB` → Primary Attack (Alt key emulation).
-
-- **MMORPG_Standard.json**: Tailored for Massively Multiplayer Online Role-Playing Games. Remapped keys to improve movement and casting speed without altering default key bindings.
-  - `Shift` → Special Action.
-  - Supports gaming peripherals like Logitech G-series by rebinding additional buttons (e.g., extra attack, utility functions) for streamlined play.
-
-- **MOBA_Standard.json**: Provides a customizable set of key remaps suitable for Multiplayer Online Battle Arenas. Simplified casting and movement controls with enhanced reaction times.
-  - `E` → Ultimate Ability.
-  - Optimizes for Razer gaming devices by mapping additional hardware buttons to secondary functions, reducing the need for frequent hand switching between keyboard layouts.
-
-- **Strategy_Standard.json**: Custom key maps designed for strategy games requiring precise input and complex command structures. Enhanced zoom controls with dedicated keys.
-  - `Q` → Zoom In; `Z` → Zoom Out.
-  - Supports gaming keyboards equipped with macro functions to execute strategic actions quickly without the need for multi-button combinations.
-
-- **VR_Gaming.json**: Virtual Reality (VR) optimized key map. Tailored controls that support intuitive VR interactions while maintaining comfort and ease of use.
-  - `Left Stick Up` → Forward; `Right Stick Down` → Backward.
-  - Requires gaming setups compatible with motion control input from the headset or controllers to function effectively.
-
-## How To Use:
-
-1. Ensure you have Karabiner installed on your Mac and open it up by navigating through Applications > Utilities > Karabiner.
-2. Copy one of these `.json` files into your working directory (`/Users/<Your Username>/Library/Application Support/org.pqrs.Karabiner/private.xml`). If the private XML file does not exist, you can create it by copying the example files.
-3. Restart Karabiner to apply changes or go into Preferences > Profiles tab on your left pane:
-   - Select a profile (e.g., default), then click the button labeled "Import" to load your custom keymap configuration.
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <item>
+        <name>FPS_Standard</name>
+        <description>Optimized controls designed specifically for First-Person Shooters (FPS) using standard keyboards.</description>
+        <remap>
+            <from>W</from>
+            <to>Up Arrow</to>
+        </remap>
+        <remap>
+            <from>A</from>
+            <to>Left Arrow</to>
+        </remap>
+        <remap>
+            <from>S</from>
+            <to>Down Arrow</to>
+        </remap>
+        <remap>
+            <from>D</from>
+            <to>Right Arrow</to>
+        </remap>
+        <remap>
+            <from>Spacebar</from>
+            <to>Jump</to>
+        </remap>
+        <remap>
+            <from>RMB</from>
+            <to>Primary Attack</to>
+        </remap>
+        <hardwareSpecific>Enhanced performance on wireless gaming keyboards by reducing latency with dedicated button remaps.</hardwareSpecific>
+    </item>
+    <item>
+        <name>MMORPG_Standard</name>
+        <description>Tailored for Massively Multiplayer Online Role-Playing Games. Remapped keys to improve movement and casting speed without altering default key bindings.</description>
+        <remap>
+            <from>Shift</from>
+            <to>Special Action</to>
+        </remap>
+        <hardwareSpecific>Supports gaming peripherals like Logitech G-series by rebinding additional buttons (e.g., extra attack, utility functions) for streamlined play.</hardwareSpecific>
+    </item>
+    <item>
+        <name>MOBA_Standard</name>
+        <description>Provides a customizable set of key remaps suitable for Multiplayer Online Battle Arenas. Simplified casting and movement controls with enhanced reaction times.</description>
+        <remap>
+            <from>E</from>
+            <to>Ultimate Ability</to>
+        </remap>
+        <hardwareSpecific>Optimizes for Razer gaming devices by mapping additional hardware buttons to secondary functions, reducing the need for frequent hand switching between keyboard layouts.</hardwareSpecific>
+    </item>
+    <item>
+        <name>Strategy_Standard</name>
+        <description>Custom key maps designed for strategy games requiring precise input and complex command structures. Enhanced zoom controls with dedicated keys.</description>
+        <remap>
+            <from>Q</from>
+            <to>Zoom In</to>
+        </remap>
+        <remap>
+            <from>Z</from>
+            <to>Zoom Out</to>
+        </remap>
+        <hardwareSpecific>Supports gaming keyboards equipped with macro functions to execute strategic actions quickly without the need for multi-button combinations.</hardwareSpecific>
+    </item>
+    <item>
+        <name>VR_Gaming</name>
+        <description>Virtual Reality (VR) optimized key map. Tailored controls that support intuitive VR interactions while maintaining comfort and ease of use.</description>
+        <remap>
+            <from>Left Stick Up</from>
+            <to>Forward</to>
+        </remap>
+        <remap>
+            <from>Right Stick Down</from>
+            <to>Backward</to>
+        </remap>
+        <hardwareSpecific>Requires gaming setups compatible with motion control input from the headset or controllers to function effectively.</hardwareSpecific>
+    </item>
+</root>
